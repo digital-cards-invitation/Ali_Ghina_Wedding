@@ -203,6 +203,7 @@
             display: inline-block;
             margin-top: 2px;
             animation: fadeIn 3s ease-in-out;
+		animation: pulse 2s infinite;
     }
 	.location-link:hover {
             background-color: #d4c2d3;
@@ -318,7 +319,18 @@
   margin: 0;
   font-size: 14px;
 }
+@keyframes pulse {
+  0%, 100% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.15);
+  }
+}
 
+.whatsapp-icon-pill {
+  animation: pulse 2s infinite;
+}
 
 	</style>
 </head>
